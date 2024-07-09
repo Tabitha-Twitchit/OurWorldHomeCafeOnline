@@ -1,0 +1,22 @@
+Index page:
+- clouds have a visible loop moment
+- moving clouds go behind main image but in front of background
+
+
+Bib page:
+- How to properly do credits, on the about page?--move to bottom of bibliography bibliography,
+	Cite water effect tutorial: https://youtu.be/O0Au0Xc-qL8?si=mmZSwaKXpaMKsETm
+- Fix broken links on bib page
+- text background on bibliography page
+- add credit for ruins image
+
+
+Cafe Page:
+- organize images temporily
+- allow search by time or location
+
+
+- bring berm image ad back in to play
+- revisit site styling
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content = "ie=edge">  
+  <title>OurWorldHomeCafe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>  
+
+</head>
+<body>
+
+  <div class="home">
+    <a href="index.html">
+      <img src="images/cybercafehomedoodle.png" width="20%" alt="a doodled version of the magenta icon of a pixelated head rising from a cup of coffee">
+    </a>
+  </div>
+  <div class = "headerabouttext">
+    <p><span style="background-color: blue;color: white;font-size: 6vw;">OurWorldHomeCafe.Online</span></p>
+    <span style="background-color: blue;color: white;line-height: 150%;font-size: 22px;">A web-zine archiving the peculiar beauty, shifting ephemerality, and social function of cybercafes.</span>
+  </div>
+  
+  <div class = "abouttext">
+    <p><span class="blued">As 2 children of the 1990s who grew up on different continents–South Asia, and North America–our lives were shaped by different degrees and modes of access to the Web. Comparing these experiences made us curious how people in other places experienced this too. We were particularly interested in the slice of time before widespread home adoption of modems, when access was scarce, and data more precious. From the mid 1990s through the present, reverberating waves of internet cafe culture rose and fell at different times around the globe. This project is our effort to trace those high watermarks and their aftermath.</span></p>
+    <p><span class="blued">We believe that the cybercafe is one of the largest, but most under-researched pieces of computer hardware, and in it we see an alternate history and future of the web, one in which physical web portals could be both literally nourishing and physically connecting. We ask, what if the web were more like a campfire, or watercooler instead of a personal handwarmer, or a Juicero? In bringing this research together–at present, approximately 325 images, and dozens of articles, videos, and other web artifacts–we aim to reexamine, and perhaps help recover some of the human potential that the internet cafe once offered.
+    </span></p> 
+    <p><span class="blued">In keeping with the simplicity of the early web, this site is static, and a labor of love/neurosis. Periodically, it may be updated with content as time allows. For simplicity it was hand coded and hosted as a Github Page. If you want to know more about the site’s creators you can do so at the following links:
+    <br>
+    <a href="https://garimathakur.com" target="_blank">https://garimathakur.com</a>
+    <br>
+    <a href="https://tabithanikolai.com" target="_blank">https://tabithanikolai.com</a>
+    </span></p>
+  </div>
+  <div class="abouttext">
+    <p><span class="blued">Landing page cybercafe photo by Alamy user <a href="https://www.alamy.com/stock-photo/?cid=MGC2REEDFNLQJ9JM7C6EA5EQS4S9MCCHZJQWMNFVW58U7BJJ4KQGD2LJBVJTG923&name=blickwinkel&sortBy=relevant" target="_blank">blickwinkel</a> taken in Morocco on 10/30/2017 and found on <a href="https://www.alamy.com/internet-cafe-in-marokko-morocco-image255211819.html?imageid=617544C7-C162-420A-945A-F976A8A8FA7C&p=851114&pn=1&searchId=2aabc31d0c47581e06fe3818f769e492&searchtype=0" target="_blank">Alamy.com</a>
+    <br>
+    <br>
+    Background sky image derived from a photo by Vecteezy user <a href="https://www.vecteezy.com/members/maxskyohm27626627" target="_blank">NARONG KHUEANKAEW</a> found on <a href="https://www.vecteezy.com/photo/2182163-blue-sky-and-beautiful-clouds" target="_blank">Vecteezy.com</a>
+    <br>
+    <br>
+    Moving clouds on main page derived from CSS by <a href="https://codepen.io/suchak">Sucharita Khanra</a> on <a href="https://codepen.io/suchak/pen/oNOzNwO">Codepen</a>
+    <br>
+    <br>
+    Image below produced by <a href="https://www.youtube.com/@LGR" target="_blank">LGR</a> and available on the <a href="https://archive.org/details/lgr-bryce-3d-renders" target="_blank">Internet Archive</a></span></p>  
+  </div>
+  <div class="fairuse">
+    <strong>A note on fair use.</strong>
+    <br>
+    <br>
+    <p>Internet cafes all over the world have long been spaces of piracy, and if you spend time in ours, you'll arguably see some here too—watermarked stock images. To our surprise a large portion of photos documenting cybercafes on the web exist within the walled gardens of stock photo websites. Though many of these images are used without express permission, we believe they are of substantial historical value in chronicling the ways the web has been experienced globally. As artists and researchers we believe in the importance of citation in the genealogy of ideas, and that art and ideas need to be as free and widely accessible as possible. In every case where information was available we cite both the specific photographer and/or organization responsible, as well as link back to the page on which we discovered the image. Please know that this project is not a profit making endeavor and is intended purely for educational purposes. If you would like your image(s) removed from our cybercafe, please contact us here: tabitha(at)tabithanikolai(dot)com or garimathakur82(at)gmail(dot)com</p>
+    <img src="images/dithershapes25.png" width="400" alt="A 3d image made in Bryce 3d of geometric shapes over rendered water" style="visibility: hidden;">
+  
+  </div>
+  <div id="water">
+
+  </div>
+  
+  <script>
+    var app;
+    var displacementSprite;
+    var background = PIXI.Sprite.from("images/backgroundimage2_flipped.png")
+    var image = PIXI.Sprite.from("images/water_reflect.png");
+
+    function initPixi() {
+      app = new PIXI.Application ({width: innerWidth, height: 300});
+      document.getElementById('water').appendChild(app.view);
+      
+      var container = new PIXI.Container();
+      app.stage.addChild(container);
+
+      //images moved outside function so they're accessible by the resize function
+      //var background = PIXI.Sprite.from("images/backgroundimage2_flipped.png")
+      background.width = window.innerWidth;
+      background.height = window.innerHeight;
+      container.addChild(background);
+  
+      //var image = PIXI.Sprite.from("images/water_flipped_gradient3.png");
+      image.width = window.innerWidth;
+      image.height = window.innerHeight / 3;
+      image.alpha = 0.6;
+      container.addChild(image);
+      //app.stage.addChild(image);
+
+      displacementSprite = PIXI.Sprite.from("images/WaterCloud.jpg");
+      var DisplacementFilter = new PIXI.DisplacementFilter(displacementSprite);
+      displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
+      app.stage.addChild(displacementSprite);
+      container.filters = [DisplacementFilter];
+      //app.stage.filters = [DisplacementFilter];
+      animate();
+      resize();
+
+      window.addEventListener('resize', resize);
+    }
+
+    function animate(){
+      displacementSprite.x += 1;
+      displacementSprite.y += 4;
+      requestAnimationFrame(animate);
+    }
+
+    function resize(){
+      app.renderer.resize(window.innerWidth, window.heigh = 300);
+      image.width = window.innerWidth;
+      image.height = window.innerHeight / 3;
+      background.width = window.innerWidth;
+      background.height = window.innerHeight;
+    }
+
+    initPixi();
+  </script>
+</body>
+</html>

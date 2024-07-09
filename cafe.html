@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OurWorldHomeCafe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+<body onload="image_starter()">
+    
+  <div class="home home-cafe">
+      <a href="index.html">
+        <img src="images/cybercafehome2.png" width="40%" alt="a magenta icon of a pixelated head rising from a cup of coffee with a house on the cup">
+      </a>
+  </div>
+  <div class="cafe_container">
+    <div class="image_container">
+      <img id="image_displayer"/>
+    </div>
+    <div id="captiontext">
+    </div>
+
+    <div class="buttoncontainer">
+      <button id="prevbutton" onclick="get_prev_image()">↜</button>
+      <button id="randombutton" onclick="get_random_image()">🔀</button>
+      <button id="nextbutton" onclick="get_next_image()">➫</button>
+    </div>
+  </div>
+</body>
+</html>

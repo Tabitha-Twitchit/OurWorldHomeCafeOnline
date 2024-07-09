@@ -1,0 +1,397 @@
+/*####GLOBAL####*/
+/*#region*/
+@font-face {
+  font-family: Roboto;
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  height: 100%;
+  font-family: Roboto;
+}
+
+body {
+  background-image: url("images/backgroundimage2.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: cover; 	
+  margin:0;
+  overflow-x: hidden;
+}
+/*#endregion*/
+
+/*####MAIN####*/
+/*#region*/
+.home {
+  margin-top: 2%;
+  margin-left: 10px;
+  position: fixed;
+  z-index: 3;
+}
+
+.overlay-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250.625em;
+  height: 100vh;
+  background: url(images/Clounds_Seemless.png) 0 100% repeat-x;
+  animation: cloudLoop 80s linear infinite alternate;
+  background-size: contain;
+  opacity: 0.7;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes cloudLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.primary {
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 5%;
+  min-width: 100%;
+}
+
+@media screen and (width < 500px) {
+  .primary{
+    margin-top: 50%;
+  }
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 68%;
+  width: 40%;
+  flex-direction: column;
+  align-items: flex-end;
+  /*
+  margin-top: min(-20%, -10px);
+  margin-left: 50%;
+  */
+  gap: 20px;
+}
+
+@media screen and (width < 500px) {
+  nav{
+    top: 50%;
+  }
+}
+
+nav a.button {
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background: #f4ea00;
+  border-radius:5px;
+  cursor:pointer;
+  color:#3e0593;
+  font-size:20px;
+  font-weight:bold;
+  padding:12px 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #528ecc;
+  width: 40%;
+  min-width: 100px;
+}
+
+nav a.button:hover {
+  background:#ec10ff;
+  color:yellow;
+  text-decoration:none;
+}
+
+nav a.button1 {
+  align-self: flex-start;
+}
+
+nav a.button2 {
+  align-self: center;
+}
+
+nav a.button3 {
+  align-self: flex-end;
+  z-index: 6;
+  animation-name:buttonglow;
+  	animation-duration:2s;
+  	animation-iteration-count:infinite;
+}
+
+@keyframes buttonglow {
+  0% {background: #f4ea00;}
+  50% {background: #ec10ff;}
+  100% {background: #f4ea00;}
+}
+/*#endregion*/
+
+/*####ABOUT####*/
+/*#region*/
+
+.headerabouttext {
+  display: flex;
+  flex-direction: column;
+  margin-top:10px;
+  margin-left: max(10%, 110px);
+  color: #ffffff;
+  max-width: 75%;
+  /*See spans in div for spec styling*/
+}
+
+.abouttext {
+  margin-left: max(10%, 110px);
+  color: #ffffff;
+  max-width: 75%;
+  font-size: 20px;
+}
+
+.fairuse {
+  display: inline block;
+  padding: 10px;
+  margin-left: max(10%, 110px);
+  margin-right: auto;
+  background-image: url("images/dithershapes25.png");
+  background-position: center;
+  background-size: cover;
+  color: black;
+  font-size: 18px;
+  max-width: 74%;
+  line-height: 1.6;
+}
+
+.blued {
+  background-color: blue;
+  line-height: 150%;
+  border-top: solid 5px blue;
+  border-bottom: solid 5px yellow;
+}
+
+.abouttext a:link {
+  background-color: yellow;
+  text-decoration:none;
+}
+
+.abouttext a:visited {
+  background-color: cyan;
+}
+
+.abouttext a:hover {
+  background-color: lightgreen;
+   text-decoration:none;
+}
+
+.abouttext a:active {
+  background-color: hotpink;
+   text-decoration:none;
+} 
+
+#water {
+  position: absolute;
+  margin-top: -150px;
+  height: 300px;
+}
+/*#endregion*/
+
+/*####BIB####*/
+/*#region*/
+
+.bibcontainer {
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  margin-left: 10%;
+}
+
+.bibcontainer img {
+  max-width: 95%;
+}
+
+.bibtext {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top:max(50px, 15%);
+  margin-left: 25%;
+  width: 40vw;
+  min-width: 60%;
+  font-size: max(15px,1.5vw);
+  z-index: 1; 
+}
+
+.bibtext ul{
+  padding-left: 20px;
+  background-image: url(images/distorted_checkers2.png);*/
+  /*background-color: #23221691;*/
+}
+
+.ruinscontainer {
+  background-image: url(images/ruins.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.bibtext h1{
+  font-size: max(3vw, 25px);
+}
+
+.bibtext a:link {
+  background-color: yellow;
+  text-decoration:none;
+}
+
+.bibtext a:visited {
+  background-color: cyan;
+}
+
+.bibtext a:hover {
+  background-color: lightgreen;
+   text-decoration:none;
+}
+
+.bibtext a:active {
+  background-color: hotpink;
+   text-decoration:none;
+} 
+/*#endregion*/
+
+/*####CAFE####*/
+/*#region*/
+
+@media screen and (width < 500px) {
+  .cafe_container{
+    /*background-color: #18cfb0;*/
+    margin-left: -18%;
+    padding-top: 15%;
+  }  
+
+  #captiontext{
+    margin-top: -15%;
+  } 
+
+  img{
+    height: auto;
+  }
+  .image_container{
+  color: white;
+  }
+
+  .home-cafe{
+    top: 2%;
+  }
+
+}
+
+.home-cafe{
+  margin-top: 0%;
+}
+
+.cafe_container{
+  color: white;
+}
+
+.image_container {
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  width: 75%;
+  height: 75vh;
+  /*background-color: #3e0593;*/
+}
+
+#image_displayer{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+#captiontext {
+  width: 75%;
+  height: 90%;
+  margin-left: 20%;
+  text-align: center;
+  background-image: linear-gradient(to bottom right,#ec10ff,yellow);
+  color:black; 
+  word-wrap: break-word;
+  border-radius:15px 50px;
+  border: 8px dotted transparent;
+  box-shadow: 0 0 0 10px transparent inset;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.buttoncontainer {
+  margin-top: 1%;
+  margin-left: 20%;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: #f4ea00;*/
+}
+
+#prevbutton {
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background: #f4ea00;
+  border-radius:5px;
+  cursor:pointer;
+  color:#3e0593;
+  font-size:5vw;
+  font-weight:bold;
+  text-shadow:0px 1px 0px #528ecc;
+  width: 25%;
+  min-width: 100px;
+}
+
+#prevbutton:hover{
+  background:#ec10ff;
+  color:yellow;
+}
+
+#randombutton {
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background: #f4ea00;
+  border-radius:5px;
+  cursor:pointer;
+  color:#3e0593;
+  font-size:5vw;
+  font-weight:bold;
+  text-shadow:0px 1px 0px #528ecc;
+  width: 25%;
+  min-width: 100px;
+}
+
+#randombutton:hover{
+  background:#ec10ff;
+  color:yellow;
+}
+
+#nextbutton {
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background: #f4ea00;
+  border-radius:5px;
+  cursor:pointer;
+  color:#3e0593;
+  font-size:5vw;
+  font-weight:bold;
+  text-shadow:0px 1px 0px #528ecc;
+  width: 25%;
+  min-width: 100px;
+}
+
+#nextbutton:hover{
+  background:#ec10ff;
+  color:yellow;
+}
+
+/*#endregion*/
