@@ -326,10 +326,11 @@ image_array = [
   'image324.jpg',
 ]
 
-
 caption_array = [
-  '	<p>	<b>	Date:	</b>	6/8/2017	<b>	Location:	</b>	Unknown	<b>	Image Credit:	</b>	<a href="		" target="_blank">	Sajjad mp, Creative Commons Attribution-Share Alike 4.0 Internationa	</a>		</p>	',
-  '	<p>	<b>	Date:	</b>	9/9/1995	<b>	Location:	</b>	Liverpool, England	<b>	Image Credit:	</b>	<a href="	https://www.mirrorpix.com/	" target="_blank">	Mirrorpix	</a>	            	</p>	',
+  //'	<p>	<b>	Date:	</b>	6/8/2017	<b>	Location:	</b>	Unknown	<b>	Image Credit:	</b>	<a href="		" target="_blank">	Sajjad mp, Creative Commons Attribution-Share Alike 4.0 Internationa	</a>		</p>	',
+  //'	<p>	<b>	Date:	</b>	9/9/1995	<b>	Location:	</b>	Liverpool, England	<b>	Image Credit:	</b>	<a href="	https://www.mirrorpix.com/	" target="_blank">	Mirrorpix	</a>	            	</p>	',
+  '	<p>	<b>	Date:	</b>	6/8/2017	<b>	Geographic Location:	</b>	Unknown	<b>	Image Credit:	</b>	<a href="		" target="_blank">	Sajjad mp, Creative Commons Attribution-Share Alike 4.0 Internationa	</a>		<b>	Caption:	</b>		<b>	<a href="	https://commons.wikimedia.org/wiki/File:%D8%B3%D8%AC%D8%A7%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86%DB%8C.jpg	" target="_blank">	Found Here	</a>	</b>	</p>	',
+  '	<p>	<b>	Date:	</b>	9/9/1995	<b>	Geographic Location:	</b>	Liverpool, England	<b>	Image Credit:	</b>	<a href="	https://www.mirrorpix.com/	" target="_blank">	Mirrorpix	</a>	           <br> 	<b>	Caption:	</b>	Frank Waring, internet cafe chef, at the Cafe Internet in north John Street. During the Mathew Street Festival and Beatle Convention, many Beatle fans were tapping into the computers at the cafe searching for Beatle information. Picture taken 9th September 1995	<b>	<br><a href="	https://www.liverpoolecho.co.uk/news/nostalgia/liverpools-first-internet-cafe-opened-25661645	" target="_blank">	Found Here	</a>	</b>	</p>	',
   '	<p>	<b>	Date:	</b>	6/19/1995	<b>	Location:	</b>	Liverpool, England	<b>	Image Credit:	</b>	<a href="	https://www.mirrorpix.com/	" target="_blank">	Mirrorpix	</a>	            	</p>	',
   '	<p>	<b>	Date:	</b>	2/16/2002	<b>	Location:	</b>	Salt Lake City, Utah	<b>	Image Credit:	</b>	<a href="	https://www.flickr.com/people/56205607@N00	" target="_blank">	Dave O	</a>	 Creative Commons Attribution-Share Alike 2 Generic      	</p>	',
   '	<p>	<b>	Date:	</b>	Unknown	<b>	Location:	</b>	Unknown	<b>	Image Credit:	</b>	<a href="	https://medium.com/@chijiokechiamaka26/internet-abuse-in-cyber-cafes-possible-solutions-db2269110bff	" target="_blank">	Unknown, possibly Chiamaka Chijioke	</a>	            	</p>	',

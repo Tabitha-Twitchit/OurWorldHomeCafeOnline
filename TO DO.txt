@@ -2,21 +2,30 @@ Index page:
 - clouds have a visible loop moment
 - moving clouds go behind main image but in front of background
 
-
 Bib page:
 - How to properly do credits, on the about page?--move to bottom of bibliography bibliography,
 	Cite water effect tutorial: https://youtu.be/O0Au0Xc-qL8?si=mmZSwaKXpaMKsETm
-- Fix broken links on bib page
-- text background on bibliography page
 - add credit for ruins image
+- A well researched article on a famous fire in china that destroyed a cyber cafe: https://www.whatsonweibo.com/the-beijing-haidian-lanjisu-internet-cafe-fire/
 
+About Page:
+- A note that none of this is automatically scraped. All sources were gathered by hand, copied pasted, and annotated as a labor of love.
+- The labor is in accumulation and bringing together an under recorded history.
 
 Cafe Page:
+- Does this page need an explainer (a ? button) Could this be done with a fun vintage popup feel?--
+	Where do captions come from? In general captions are copied over from the page the image was originally found on, these are noted by quotation marks. In this case it's important to note that many of these captions are themselves "vintage" and reflect the period when the image was taken or posted. In some instances captions are our own commentary, and lack quotation marks.
+	Broken links? Because this history is ephemeral, you may find that although the project has taken approximately a year, original image link pages may be broken.
+	Where do dates come from? Dates are established only to the best of our ability. They are derived from those reported on their respective sites, with oref given to their creation rather than upload date. Further though, dates may be subject to inaccuracies from incorrect date settings on the camera with which they are taken.
 - organize images temporily
-- allow search by time or location
-
+- allow search by location?
+- add mom and dad cafe image from india
+- add zots internet cafe image
+- add melbas internet cafe
 
 - bring berm image ad back in to play
-- revisit site styling
+- revisit over all site styling (colors, rounded buttons etc.)
 
 
+
+' = &#039

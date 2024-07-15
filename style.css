@@ -227,9 +227,14 @@ nav a.button3 {
 }
 
 .bibtext ul{
-  padding-left: 20px;
-  background-image: url(images/distorted_checkers2.png);*/
+  padding: 20px 20px 20px 40px;
+  /*padding-left: 20px;*/
+  background-image: url(images/distorted_checkers2.png);
   /*background-color: #23221691;*/
+}
+
+.bibtext span{
+  font-size: smaller;
 }
 
 .ruinscontainer {
