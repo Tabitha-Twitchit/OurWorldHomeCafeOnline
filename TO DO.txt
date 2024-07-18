@@ -1,6 +1,7 @@
 Index page:
 - clouds have a visible loop moment
 - moving clouds go behind main image but in front of background
+- Changfe the buttons, more kidpix or cool sign style
 
 Bib page:
 - How to properly do credits, on the about page?--move to bottom of bibliography bibliography,
@@ -17,7 +18,9 @@ Cafe Page:
 	Where do captions come from? In general captions are copied over from the page the image was originally found on, these are noted by quotation marks. In this case it's important to note that many of these captions are themselves "vintage" and reflect the period when the image was taken or posted. In some instances captions are our own commentary, and lack quotation marks.
 	Broken links? Because this history is ephemeral, you may find that although the project has taken approximately a year, original image link pages may be broken.
 	Where do dates come from? Dates are established only to the best of our ability. They are derived from those reported on their respective sites, with oref given to their creation rather than upload date. Further though, dates may be subject to inaccuracies from incorrect date settings on the camera with which they are taken.
-- organize images temporily
+- Delete Caption temp-layte text for non captioned images
+- delete superfluous caption data (redundant date etc.)
+- provide clearer captions ie Cyberia cyber cafe
 - allow search by location?
 - add mom and dad cafe image from india
 - add zots internet cafe image

@@ -662,6 +662,7 @@ caption_array = [
 '	<p>	<b>	Date:	</b>	Unknown	<b>	Geographic Location:	</b>	Ahmedabad, India	<b>	Image Credit:	</b>	<a href="		" target="_blank">	Unknown	</a>	            	<br>	<b>	Caption:	</b>	Vikas Cyber Cafe Gota Road Cyber Cafes In Ahmedabad Justdial	<br>	<b>	<a href="	https://hieiro.web.app/cyber-cafe-near-me-images.html	" target="_blank">	Found Here	</a>	</b>	</p>	',
 '	<p>	<b>	Date:	</b>	Unknown	<b>	Geographic Location:	</b>	Argentina	<b>	Image Credit:	</b>	<a href="	https://www.alamy.com/stock-photo/?name=David+R.+Frazier+Photolibrary,+Inc.&pseudoid=D73D9102-8F24-4D85-867A-F6EF4C1B604C&sortBy=relevant	" target="_blank">	David R. Frazier Photolibrary, Inc.	</a>	            	<br>	<b>	Caption:	</b>		<br>	<b>	<a href="	https://www.alamy.com/young-boys-play-computer-games-at-an-internet-cafe-locoturio-in-argentina-image6520022.html	" target="_blank">	Found Here	</a>	</b>	</p>	',
 ]
+
 /* OLD
 caption_array = [
   //'	<p>	<b>	Date:	</b>	6/8/2017	<b>	Location:	</b>	Unknown	<b>	Image Credit:	</b>	<a href="		" target="_blank">	Sajjad mp, Creative Commons Attribution-Share Alike 4.0 Internationa	</a>		</p>	',
@@ -993,6 +994,7 @@ caption_array = [
   '	<p>	<b>	Date:	</b>	Unknown	<b>	Location:	</b>	Honduras	<b>	Image Credit:	</b>	<a href="	https://www.alamy.com/stock-photo/?name=Charles+O.+Cecil&pseudoid=E1254FDB-DF64-4FED-9DC1-D15177F5D462&sortBy=relevant	" target="_blank">	Charles O. Cecil	</a>	            	</p>	'
 ]
 */
+
 let current_index = 0;
 
 function image_starter(){
